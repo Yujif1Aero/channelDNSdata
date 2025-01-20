@@ -12,7 +12,7 @@ int main() {
         return 1;
     }
 
-    std::ofstream outputFile("./LM_Channel_1000_mean_prof_add_udelta_wdelta.txt");
+    std::ofstream outputFile("./output/LM_Channel_180_mean_prof_add_udelta_wdelta.txt");
     if (!outputFile.is_open()) {
         std::cerr << "Unable to open output file." << std::endl;
         return 1;
@@ -78,7 +78,7 @@ int main() {
     }
 
     outputFile.close();
-    std::cout << "File processed successfully. Output saved to ./LM_Channel_1000_mean_prof_add_udelta_wdelta.txt" << std::endl;
+    std::cout << "File processed successfully. Output saved to" + outputFile << std::endl;
 
     return 0;
 }
